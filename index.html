@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest Hammer | End-to-End Construction Solutions Chennai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --brand-dark: #1D2B44;
+            --brand-orange: #F25F01;
+        }
+        .bg-brand-dark { background-color: var(--brand-dark); }
+        .text-brand-orange { color: var(--brand-orange); }
+        .bg-brand-orange { background-color: var(--brand-orange); }
+        .border-brand-orange { border-color: var(--brand-orange); }
+        
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Marquee Animation for Material Depo */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 25s linear infinite;
+        }
+        .animate-marquee:hover { animation-play-state: paused; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--brand-dark); }
+        
+        .hero-overlay { background: rgba(29, 43, 68, 0.75); }
+        .service-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-gray-50">
+
+    <div class="bg-brand-dark text-white text-sm py-2 px-6 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-phone-alt text-brand-orange mr-1"></i> +91 8925285928</span>
+                <span class="hidden md:inline">|</span>
+                <span><i class="fas fa-envelope text-brand-orange mr-1"></i> honesthammer8@gmail.com</span>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/honesthammer8" class="hover:text-brand-orange transition"><i class="fab fa-instagram mr-1"></i> @honesthammer8</a>
+            </div>
+        </div>
+        <div class="border-t border-slate-700 mt-2 pt-2 flex justify-center gap-6 text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold">
+            <a href="#about" class="hover:text-brand-orange">About</a>
+            <a href="#services" class="hover:text-brand-orange">Services</a>
+            <a href="#depo" class="hover:text-brand-orange">Materials</a>
+            <a href="#contact" class="hover:text-brand-orange">Contact</a>
+        </div>
+    </div>
+
+    <header class="relative h-[85vh] flex items-center justify-center text-center text-white bg-[#ACDFFA]" 
+            style="background-image: url('images\header.jpg') center/cover no-repeat;">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 px-4 max-w-4xl">
+            <img src="images\logo.jpeg" alt="Honest Hammer logo" class="h-40 mx-auto mb-8 drop-shadow-2xl" >
+            <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none">Honest Hammer</h1>
+            <h2 class="text-2xl md:text-4xl font-bold mt-4 text-brand-orange">Your end-to-end construction solution</h2>
+            <p class="text-xl mt-4 opacity-90 font-light tracking-wide uppercase">Blue collar service & material provider • CHENNAI</p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#services" class="bg-brand-orange hover:bg-orange-600 text-white font-black py-4 px-10 rounded-sm transition-all shadow-xl uppercase text-sm">Our Services</a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-dark text-white font-black py-4 px-10 rounded-sm transition-all uppercase text-sm">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-black text-center mb-16 uppercase tracking-widest"><span class="border-b-4 border-brand-orange">Why Choose Us?</span></h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 text-center bg-gray-50 rounded-xl hover:shadow-2xl transition duration-300 border-b-4 border-brand-dark">
+                    <i class="fas fa-user-shield text-4xl text-brand-orange mb-6"></i>
+                    <h4 class="font-black text-lg mb-3 uppercase">Expert Team</h4>
+                    <p class="text-sm leading-relaxed text-gray-600">Dedicated professionals with proven expertise across all residential and commercial services.</p>
+                </div>
+                <div class="p-8 text-center bg-gray-50 rounded-xl hover:shadow-2xl transition duration-300 border-b-4 border-brand-orange">
+                    <i class="fas fa-piggy-bank text-4xl text-brand-orange mb-6"></i>
+                    <h4 class="font-black text-lg mb-3 uppercase">Cost Savings</h4>
+                    <p class="text-sm leading-relaxed text-gray-600">Our in-house supply chain for materials and labor reduces overheads while maintaining premium quality.</p>
+                </div>
+                <div class="p-8 text-center bg-gray-50 rounded-xl hover:shadow-2xl transition duration-300 border-b-4 border-brand-dark">
+                    <i class="fas fa-layer-group text-4xl text-brand-orange mb-6"></i>
+                    <h4 class="font-black text-lg mb-3 uppercase">Full-Spectrum</h4>
+                    <p class="text-sm leading-relaxed text-gray-600">From site digging to interior finishing and moving—we cover every single detail under one roof.</p>
+                </div>
+                <div class="p-8 text-center bg-gray-50 rounded-xl hover:shadow-2xl transition duration-300 border-b-4 border-brand-orange">
+                    <i class="fas fa-heart text-4xl text-brand-orange mb-6"></i>
+                    <h4 class="font-black text-lg mb-3 uppercase">Customer-Centric</h4>
+                    <p class="text-sm leading-relaxed text-gray-600">Transparent pricing, highly customized site plans, and dedicated ongoing support after handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-brand-dark text-white overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 relative">
+                <div class="absolute -top-10 -left-10 w-32 h-32 bg-brand-orange opacity-20 rounded-full"></div>
+                <h3 class="text-4xl md:text-5xl font-black mb-8 leading-tight uppercase">Quality Meets Integrity <br>In Every Hammer Strike.</h3>
+                <p class="text-lg leading-relaxed opacity-80 mb-6">
+                    We specialize in delivering comprehensive, high-quality solutions for all your construction, home improvement, and relocation needs. 
+                </p>
+                <p class="text-lg leading-relaxed opacity-80">
+                    Our integrated approach ensures seamless execution from start to finish, using premium materials, skilled professionals, and cost-effective strategies. We handle every detail, so you can enjoy hassle-free results.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200" alt="Construction detail" class="rounded-lg shadow-2xl border-l-8 border-brand-orange">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h3 class="text-4xl font-black uppercase tracking-tighter italic">Our Services</h3>
+                <p class="text-brand-orange font-bold mt-4 uppercase tracking-[0.3em]">Standalone or Full Package Solutions</p>
+                <div class="h-1 w-24 bg-brand-dark mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Civil Works">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Complete Civil Works</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Foundation to finishing: site digging, RCC work, brickwork, and plumbing lines for a strong build.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Electrical">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Full Electrical Wiring</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Switches, lights, DB boxes, and earthing. Safe, power-saving, and industry-standard installations.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1585938389612-a552a28d6914?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Plumbing">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Complete Plumbing</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Leak-proof installation of pipes, taps, and geysers. Water-saving options to avoid future hassles.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Woodwork">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Custom Woodwork</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Doors, windows, and cupboards in teak or sal. Polished finishes for durability and premium looks.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1501127077391-7649514787f0?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Grills">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Window & Grills</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Wooden, aluminium, or UPVC window fittings and safety grills for security and ventilation.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1581850518616-bcb8186c3940?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Flooring">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Wooden Flooring</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Teak, sal, or laminate flooring with expert base preparation and high-quality polish.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1557597774-9d2739f85a76?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Security">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Security Systems</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">CCTV, biometric access, and alarms. Customized safety for home or office with remote viewing.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Labour">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Labour Contractors</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Skilled masons and helpers for any site work. Reliable teams focused on timelines.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1518005020453-1bc3a3352ea9?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Materials">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Direct Material Supply</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Wholesale rates on Cement, Sand, Steel, and Paints sourced directly from our network.</p>
+                    </div>
+                </div>
+
+                 <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&q=80&w=600" class="h-48 w-full object-cover" alt="Moving">
+                    <div class="p-6">
+                        <h4 class="text-xl font-black mb-3 text-brand-dark uppercase">Packers & Movers</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Packing, loading, and safe transport for local or outstation office and house shifts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depo" class="bg-brand-orange py-6 overflow-hidden border-y-4 border-brand-dark">
+        <div class="animate-marquee whitespace-nowrap text-white font-black text-2xl uppercase tracking-tighter">
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Ultratech Cement</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>JSW Steel TMT</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Fine River Sand</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Quality Red Bricks</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Asian Paints Royale</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Finolex Cables</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Burma Teak Wood</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Astral Pipes</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Ultratech Cement</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>JSW Steel TMT</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Fine River Sand</span>
+            <span class="mx-12"><i class="fas fa-check-circle mr-2"></i>Quality Red Bricks</span>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-black text-center mb-16 uppercase">What Our Clients Say</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-8 border rounded-2xl relative shadow-sm hover:shadow-lg transition">
+                    <i class="fas fa-quote-left text-brand-orange text-3xl mb-4"></i>
+                    <p class="italic text-gray-700 leading-relaxed mb-6">"Honest Hammer renovated our office in OMR. The electrical wiring and security system setup were flawless. Highly recommend their package services."</p>
+                    <div class="font-black text-brand-dark uppercase text-sm">— Arul Selvan, Business Owner</div>
+                </div>
+                <div class="p-8 border rounded-2xl relative shadow-sm hover:shadow-lg transition">
+                    <i class="fas fa-quote-left text-brand-orange text-3xl mb-4"></i>
+                    <p class="italic text-gray-700 leading-relaxed mb-6">"They handled our house shift to Pudupakkam. The packers and movers were professional, and we later hired them for our modular kitchen woodwork."</p>
+                    <div class="font-black text-brand-dark uppercase text-sm">— Meera Raghavan</div>
+                </div>
+                <div class="p-8 border rounded-2xl relative shadow-sm hover:shadow-lg transition">
+                    <i class="fas fa-quote-left text-brand-orange text-3xl mb-4"></i>
+                    <p class="italic text-gray-700 leading-relaxed mb-6">"The direct material supply saved us almost 15% on our construction budget. Transparent billing and quality materials."</p>
+                    <div class="font-black text-brand-dark uppercase text-sm">— K. Venkatesh, Civil Engineer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-brand-dark text-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div>
+                <h3 class="text-4xl font-black mb-8 uppercase tracking-tight">Request a Consultation</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Full Name" class="bg-slate-800 border-none p-4 rounded-lg focus:ring-2 focus:ring-brand-orange outline-none text-white placeholder-slate-400">
+                        <input type="text" placeholder="Phone Number" class="bg-slate-800 border-none p-4 rounded-lg focus:ring-2 focus:ring-brand-orange outline-none text-white placeholder-slate-400">
+                    </div>
+                    <select class="w-full bg-slate-800 border-none p-4 rounded-lg focus:ring-2 focus:ring-brand-orange outline-none text-white">
+                        <option>Choose Service</option>
+                        <option>Civil Works Package</option>
+                        <option>Material Supply</option>
+                        <option>Electrical/Plumbing</option>
+                        <option>Security Systems</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea rows="5" placeholder="Your Message" class="w-full bg-slate-800 border-none p-4 rounded-lg focus:ring-2 focus:ring-brand-orange outline-none text-white placeholder-slate-400"></textarea>
+                    <button class="bg-brand-orange text-white font-black py-4 px-12 rounded-lg hover:bg-orange-600 transition-all uppercase tracking-widest shadow-xl">Send Inquiry</button>
+                </form>
+            </div>
+            <div>
+                <h3 class="text-4xl font-black mb-8 uppercase tracking-tight italic">Our Office</h3>
+                <div class="mb-8">
+                    <p class="text-2xl font-bold text-brand-orange mb-2">PUDUPAKKAM</p>
+                    <p class="opacity-70">Kelambakkam - Vandalur Road, Chennai - 603103</p>
+                </div>
+                <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15560.18029966113!2d80.1983!3d12.8394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a7698000001%3A0x6a00000000000000!2sPudupakkam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-16 border-t-8 border-brand-orange">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="text-center md:text-left">
+                    <h4 class="text-3xl font-black mb-2 uppercase">Honest Hammer</h4>
+                    <p class="text-brand-orange font-bold uppercase tracking-widest mb-4">Blue Collar Experts</p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-brand-orange transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-brand-orange transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-brand-orange transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm opacity-50 mb-2">© 2026 Honest Hammer Co. Pudupakkam, Chennai.</p>
+                    <p class="text-xs opacity-40">All construction works executed under strict safety standards.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
